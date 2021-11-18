@@ -31,7 +31,6 @@
           >
             <svg
               width="110"
-              id="icon_brand_logo"
               class="brand_logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 433 90"
@@ -97,7 +96,7 @@
                     <ul
                       aria-labelledby="programing"
                       class="desktop-only header-container__list--lecture--two"
-                      ole="menu"
+                      role="menu"
                     >
                       <li role="none">
                         <a
@@ -2027,11 +2026,10 @@
     </header>
     <main>
       <div class="main-visual">
-        <div class="commercial__container" aria-label="인프런 광고">
+        <div class="commercial__container">
           <a
             rel="noopener noreferrer"
-            href=""
-            role="tabpanel"
+            href="https://www.inflearn.com"
             aria-label="1 of 3"
             title="슬라이드 1"
           >
@@ -2054,7 +2052,7 @@
       </div>
       <div class="main-container">
         <section class="event">
-          <h class="sr-only">진행 이벤트</h>
+          <h2 class="sr-only">진행 이벤트</h2>
           <div class="event-wrapper desktop-only">
             <ul class="event-list">
               <li class="event-list-item"><a rel="noopener noreferrer" href="#">독서의 계절</a></li>
@@ -2183,7 +2181,7 @@
 
         <div class="modal hidden" role="dialog" aria-labelledby="login" aria-modal="true">
           <article class="login" id="login">
-            <h1 class="login-title">
+            <h2 class="login-title">
               <span class="sr-only">인프런</span>
               <a rel="noopener noreferrer" href="#" title="인프런 메인 화면 이동하기">
                 <svg
@@ -2206,7 +2204,7 @@
                   />
                 </svg>
               </a>
-            </h1>
+            </h2>
             <form action="#" method="get" class="login-form">
               <fieldset>
                 <legend class="sr-only">로그인</legend>
@@ -3785,14 +3783,16 @@
               <li class="card">
                 <a rel="noopener noreferrer" class="card-link" href="#">
                   <figure class="card-image__container">
-                    <!-- <source srcset="images/lecture/lecture6.avif" type="image/avif" /> -->
-                    <source srcset="images/lecture/lecture6.webp" type="image/webp" />
-                    <img
-                      class="card-image"
-                      alt="Microsoft Teams - 1 Teams 활용"
-                      src="images/lecture/lecture6.png"
-                      loading="lazy"
-                    />
+                    <picture>
+                      <!-- <source srcset="images/lecture/lecture6.avif" type="image/avif" /> -->
+                      <source srcset="images/lecture/lecture6.webp" type="image/webp" />
+                      <img
+                        class="card-image"
+                        alt="Microsoft Teams - 1 Teams 활용"
+                        src="images/lecture/lecture6.png"
+                        loading="lazy"
+                      />
+                    </picture>
                     <figcaption class="card-image__description">
                       Microsoft Teams - 1 Teams 활용 (기초부터 팀 구성 활용까지)
                     </figcaption>
@@ -4287,19 +4287,6 @@
                 <source srcset="images/logo/nc.webp" type="image/webp" />
                 <img alt="nc" src="images/logo/nc.png" loading="lazy" />
               </picture>
-
-              <img
-                src="https://cdn.inflearn.com/public/group_logo/0/186c59ed-98b1-4de2-8881-109c23e41bcd/%E1%84%8F%E1%85%AE%E1%84%91%E1%85%A1%E1%86%BC.png"
-                alt="쿠팡"
-              />
-              <img
-                src="https://cdn.inflearn.com/public/group_logo/0/b47b4ead-5141-46ec-8003-81c6dbc2e5b7/LG.png"
-                alt="lg"
-              />
-              <img
-                src="https://cdn.inflearn.com/public/group_logo/0/4aa479b9-4e05-4f8e-84b3-1fb7edb60c0c/nc.png"
-                alt="nc"
-              />
             </div>
           </div>
         </section>
@@ -4419,7 +4406,6 @@
             >
               <svg
                 width="110"
-                id="icon_brand_logo"
                 class="brand_logo"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 433 90"
