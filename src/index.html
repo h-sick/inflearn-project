@@ -1971,7 +1971,8 @@
         </div>
         <div class="header-container__right">
           <form action="#" method="get" class="desktop-only search-lecture">
-            <input type="text" />
+            <label for="header-search" class="sr-only">검색</label>
+            <input type="text" id="header-search" />
             <button type="submit" aria-label="강의 검색">
               <i class="far fa-search"></i>
             </button>
@@ -4421,6 +4422,7 @@
               rel="noopener noreferrer"
               href="https://www.inflearn.com/"
               class="footer__logo desktop-only"
+              aria-label="인프런"
             >
               <svg
                 width="110"
