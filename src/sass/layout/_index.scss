@@ -1,0 +1,19 @@
+@forward './footer';
+@forward './header';
+@forward './search';
+@forward './main_lecture';
+@forward './login';
+@forward './visual';
+@use '../utils/' as *;
+
+main {
+  @include mobile {
+    padding: 1rem;
+    margin-top: 64px;
+  }
+  .main-container {
+    width: 100%;
+    max-width: rem(1171px);
+    margin: 0 auto;
+  }
+}

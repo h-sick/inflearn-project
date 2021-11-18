@@ -1,0 +1,122 @@
+@use './unit' as *;
+@use './color' as *;
+@use 'sass:math';
+
+// padding 관련 믹스인
+@mixin paddingY($paddingY: 0) {
+  padding-top: rem($paddingY);
+  padding-bottom: rem($paddingY);
+}
+
+@mixin paddingX($paddingX: 0) {
+  padding-left: rem($paddingX);
+  padding-right: rem($paddingX);
+}
+
+// margin 관련 믹스인
+@mixin marginY($marginY: 0) {
+  margin-top: rem($marginY);
+  margin-bottom: rem($marginY);
+}
+
+@mixin marginX($marginX: 0) {
+  margin-left: rem($marginX);
+  margin-right: rem($marginX);
+}
+
+@mixin autoMargin() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Position 관련 믹스인
+@mixin pos($pos: absolute, $t: initial, $r: initial, $b: initial, $l: initial) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+@mixin posCenter() {
+  @include pos($t: 50%, $l: 50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin positionY($top: 50%, $translateY: -50%, $transform: none) {
+  position: absolute;
+  top: $top;
+  left: 0;
+  transform: translateY($translateY) $transform;
+}
+
+@mixin absolute() {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Width, Height 관련 믹스인
+@mixin wh($w: 100%, $h: auto) {
+  width: $w;
+  height: $h;
+}
+
+// 반응형 콘텐츠
+@mixin respons($width: max-width) {
+  #{$width}: 100%;
+  height: auto;
+}
+
+// text-ellipsis
+@mixin textEllipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin multilineEllipsis($clamp: 2, $lh: 1.4) {
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: $lh;
+}
+
+// apply 글꼴
+@mixin applyFont {
+  font-size: rem(16px);
+  color: $gray200;
+  line-height: 1.4;
+
+  strong {
+    font-size: rem(18px);
+    font-weight: 700;
+    color: $black;
+    display: block;
+    padding-bottom: rem(10px);
+  }
+}
+
+@mixin applyBtn {
+  font-size: rem(16px);
+  color: $white;
+  font-weight: 700;
+  border: 2px solid $inflearn-green ;
+  background: $inflearn-green;
+  border-radius: rem(290486px);
+  cursor: pointer;
+  @include paddingX(16px);
+  @include paddingY(10px);
+
+  i {
+    margin-left: rem(10px);
+  }
+}
+
+// 버튼 태그 아이콘들만 보이도록
+@mixin buttonReset() {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
