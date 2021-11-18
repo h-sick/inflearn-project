@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a97a2bc-666c-4f2f-9b4d-dc1327d30cac/deploy-status)](https://app.netlify.com/sites/kingflearn/deploys)
+
 # 인프런 프로젝트
 
 ## 개발기간
