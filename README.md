@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a97a2bc-666c-4f2f-9b4d-dc1327d30cac/deploy-status)](https://app.netlify.com/sites/kingflearn/deploys)
+
 # 인프런 프로젝트
 
 html과 css를 사용해서 인프런 클론 코딩 프로젝트를 진행했다.
